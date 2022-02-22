@@ -5,12 +5,12 @@ const app = express();
 
 const Port = process.env.Port || 5000;
 
-mongoose.connect('mongodb+srv://Plantholic:plantholic@plantholic.y97ji.mongodb.net/Plantholic?retryWrites=true&w=majority');
+// mongoose.connect('mongodb+srv://Plantholic:plantholic@plantholic.y97ji.mongodb.net/Plantholic?retryWrites=true&w=majority');
 
-const connection = mongoose.connection;
-connection.once("open",()=>{
-    console.log("MongoDB connected");
-});
+// const connection = mongoose.connection;
+// connection.once("open",()=>{
+//     console.log("MongoDB connected");
+// });
 
 // middleware 
 
