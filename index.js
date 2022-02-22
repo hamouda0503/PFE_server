@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-const Port = process.env.port || 5000;
+const Port = process.env.Port || 5000;
 
 mongoose.connect('mongodb+srv://Plantholic:plantholic@plantholic.y97ji.mongodb.net/Plantholic?retryWrites=true&w=majority');
 
