@@ -29,7 +29,7 @@ router.route("/checkusername/:username").get((req,res)=>{
             status: false,
         });
     });
-})
+});
 router.route("/login").post((req, res) => {
     User.findOne({ username: req.body.username }, (err, result) => {
         if (err) return res.status(500).json({ msg: err });
