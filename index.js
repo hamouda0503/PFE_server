@@ -18,7 +18,16 @@ app.use(express.json());
 const userRoute = require("./routes/user"); 
 
 app.use("/user", userRoute);  
-
-app.route("/").get((req,res)=>res.json("your first restapi 1"));
-
-app.listen(port, ()=>console.log(`your server is running on port ${port}`));
+data = {
+    msg: "Welcome ",
+    info: "This is a root endpoint",
+    Working: "Documentations ",
+    request:
+      "Hey ",
+  };
+  
+  app.route("/").get((req, res) => res.json(data));
+  
+  app.listen(port, "0.0.0.0", () =>
+    console.log(`welcome your listinnig at port ${port}`)
+  );
